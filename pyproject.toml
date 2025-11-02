@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "quietml"
-version = "2.0.1"
+version = "2.1.0"
 description = "A lightweight Python tool to silence and simplify noisy ML logs globally or temporarily."
 readme = { file = "README.md", content-type = "text/markdown" }
 authors = [{ name = "Kaustubh Aggarwal", email = "kaustubh.aggarwal31@example.com" }]
