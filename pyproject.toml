@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quietml"
+version = "2.0.1"
+description = "A lightweight Python tool to silence and simplify noisy ML logs globally or temporarily."
+readme = { file = "README.md", content-type = "text/markdown" }
+authors = [{ name = "Kaustubh Aggarwal", email = "kaustubh.aggarwal31@example.com" }]
+license = { text = "MIT" }
+requires-python = ">=3.8"
+
+# ✅ No forced dependencies
+dependencies = []
+
+# 🏷️ Professional PyPI metadata
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/kaustubh3103/quietml"
+"Bug Tracker" = "https://github.com/kaustubh3103/quietml/issues"
+
+# ⚙️ Optional extras (user installs what they need)
+[project.optional-dependencies]
+lightgbm = ["lightgbm"]
+xgboost = ["xgboost"]
+catboost = ["catboost"]
+tensorflow = ["tensorflow"]
+all = ["lightgbm", "xgboost", "catboost", "tensorflow"]
